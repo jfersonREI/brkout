@@ -142,7 +142,7 @@ function checkForCollisions() {
       score++;
       scoreDisplay.innerHTML = score;
       if (blocks.length == 0) {
-        scoreDisplay.innerHTML = "Ganamos compañera!";
+        scoreDisplay.innerHTML = "You win!";
         clearInterval(timerId);
         document.removeEventListener("keydown", moveUser);
       }
