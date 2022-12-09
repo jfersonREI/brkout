@@ -1,0 +1,105 @@
+:root {
+  --rei-red: #fd433c;
+  --rei-blue: #00234a;
+  --rei-blue-5: #e5e9ed;
+  --rei-blue-30: #99a7b7;
+  --rei-green: #1e8c8c;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--rei-blue-5);
+  //background-image: url("./images/cielo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title {
+  color: var(--rei-blue);
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Unbounded", sans-serif;
+  margin-top: 45px;
+}
+
+#score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Unbounded", sans-serif;
+  color: var(--rei-blue);
+  //font-size: 25px;
+}
+
+.btn {
+  font-size: 20px;
+  margin-left: 25px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  text-decoration: none;
+  font-family: "Unbounded", sans-serif;
+  color: white;
+  background: #fd433c;
+  border-radius: 8px;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--rei-green);
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  //transform: scale(1.1);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+.grid {
+  position: absolute;
+  width: 560px;
+  height: 300px;
+  background-color: #fff;
+  border: 16px solid #fff;
+  border-radius: 16px;
+}
+
+.block {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: var(--rei-blue-30);
+  left: 50px;
+  bottom: 50px;
+  border-radius: 5px;
+}
+
+.user {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: var(--rei-blue);
+  border-radius: 5px;
+  left: 50px;
+  bottom: 50px;
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: var(--rei-red);
+}
